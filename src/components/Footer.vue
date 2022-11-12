@@ -25,7 +25,7 @@
 <span class="title">Nous joindre</span>
           <div class="info">
 <i class="fas fa-mobile-alt"></i>
-  <span>+33 7 78 64 49 27 </span>
+  <span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
   </div>
        <div class="info">
                    <i class="far fa-clock"></i>

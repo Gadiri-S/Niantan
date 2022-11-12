@@ -14,6 +14,7 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
            </div>
+          <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
 
       </div>
      
@@ -25,6 +26,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
            </div>
            <div class="img-container"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
+           <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
 
       </div>
 
@@ -44,8 +46,11 @@
             <span>Curage</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>Le curage est une opération consistant à nettoyer un bâtiment de tous ses éléments non constructifs, c'est-à-dire les menuiseries,
+les cloisons, les revêtements mais aussi le béton détérioré et surtout tous les matériaux de construction contaminés par le plomb ou
+encore l'amiante.</p>
            </div>
+          <div class="img-container-mobile"> <img src="../assets/handy.webp"  class="img fade" alt=""></div>
 
       </div>
      
@@ -58,6 +63,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
            </div>
                    <div class="img-container"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
+                   <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
 
       </div>
          
@@ -67,8 +73,10 @@
             <span>Néttoyage après incendie</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>Un nettoyage professionnel après incendie s&#39;impose dans la majorité des cas. Les premières 48 Heures sont
+déterminantes. Notre mission est de sécuriser la zone et de prendre soin des biens matériaux pouvant être remis en état.</p>
            </div>
+          <div class="img-container-mobile"> <img src="../assets/f.jpg"  class="img fade" alt=""></div>
 
       </div>
      
@@ -78,9 +86,12 @@
             <span>Raffraîchissement</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>Il s'agit de travaux qui touchent principalement à
+la décoration de votre appartement ou maison. L'objectif est d&#39;adapter celle-ci à votre goût si vous occupez le logement ou au goût du plus
+grand nombre dans le cadre d'une vente ou d'une location.</p>
            </div>
                    <div class="img-container"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
+                   <div class="img-container-mobile"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
 
       </div>
 
@@ -136,13 +147,22 @@ destroyed() {
             min-height: 100vh;
             padding: 3%;
 word-break: break-word;
-            h1{
-              font-size:45px;
-              color:white;
-            }
+           
 
 }
 
+.fade {
+  opacity: 0;  
+	transition: 0.3s all ease-out;  
+	transform: scale(0.8);  
+	box-sizing: border-box;  }
+ h1{
+              font-size:45px;
+              color:white;
+              margin: 20px 0;
+                          text-transform: uppercase;
+
+            }
 .y{
                 color:rgb(255, 208, 0);
 
@@ -175,6 +195,8 @@ display: flex;
   font-size: 1.2rem;
   color: white;
   padding: 25px;
+
+
 }
 
 .img-container{
@@ -193,24 +215,36 @@ display: flex;
 
 
 
-
+.img-container-mobile{
+  display: none;
+}
 
 
 @media (max-width:1100px) {
 
+  .img-container{
+  display: none;
+}
+
+.services{
 .card{
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  padding: 0;
 }
 
-.card:nth-child(even){
+.card{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+}
 
-.img-container{
+
+
+.img-container-mobile{
+  display: block;
   width: 90%;
 }
 .img{
@@ -225,11 +259,7 @@ display: flex;
 
 }
 
-.fade {
-  opacity: 0;  
-	transition: 0.3s all ease-out;  
-	transform: scale(0.8);  
-	box-sizing: border-box;  }
+
 @keyframes moveright {
 0% {
     transform: translateX(500px);
@@ -246,6 +276,16 @@ display: flex;
   .img{
   height: 250px;
   width: 90%;
+}
+
+.card-text{
+  width: 90%;
+  margin: 5px;
+  font-size: 20px;
+
+  span{
+    font-size:35px
+  }
 }
  
 }

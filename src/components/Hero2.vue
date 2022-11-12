@@ -13,6 +13,7 @@
       <div class="picture">
         <div class="pic1">
       <img src="../assets/5.jpg" class="big" alt="">
+      
 
         </div>
         <div class="container-small">

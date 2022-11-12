@@ -25,7 +25,15 @@ h1{
 }
 
 
-  a {
+  a{
+
+    text-decoration: none;
+          color: inherit;
+
+
+    &:visited{
+      color: inherit;
+    }
     &.router-link-exact-active {
       color: inherit;
     }

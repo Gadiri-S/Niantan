@@ -2,25 +2,39 @@
   <div class="container">
 
     <div class="header">
-        <h1><span class="y">C</span>ONTACT</h1>
+        <h1><span class="y">C</span>ONTACT ET <span class="y">D</span>EVIS</h1>
+
+        <h2>Pour toute demande d'information veuillez remplir le formulaire ci-dessous ou contactez nous directement par téléphone</h2>
     </div>
 
 
-    <form action="">
-        <input type="text" placeholder="Prenom*" required>
-        <input type="text" placeholder="Nom de famille*" required> 
-        <input type="mail" placeholder="Email*" required>
-        <input type="tel" placeholder="Telephone*" required>
-        <input type="text" placeholder="Nom de la société*" required>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message*" required></textarea>
-        <button>Envoyer</button>
+    <form @submit.prevent="handleSubmit">
+        <input type="text" placeholder="Prenom*" v-model="firstname"  @blur="v$.firstname.$touch" required>
+          <div v-if="v$.firstname.$error" class="error">Ce champ est obligatoire.</div>
+        
+        <input type="text" placeholder="Nom de famille*" v-model="lastname" @blur="v$.lastname.$touch" required> 
+                  <div v-if="v$.lastname.$error" class="error">Ce champ est obligatoire.</div>
+        
+        <input type="email" placeholder="Email*" v-model="email" @blur="v$.email.$touch" required>
+                  <div v-if="v$.email.$error" class="error">Veuillez entrer une adresse email valide.</div>
+       
+        <input type="tel" placeholder="Telephone*" v-model="tel" @blur="v$.tel.$touch" required>
+                  <div v-if="v$.tel.$error" class="error">Veuillez entrer un numéro de téléphone valide.</div>
+        
+        <input type="text" placeholder="Nom de la société*" v-model="business" @blur="v$.business.$touch" required>
+                  <div v-if="v$.business.$error" class="error">Ce champ est obligatoire.</div>
+       
+        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message*" v-model="message" @blur="v$.message.$touch" required></textarea>
+                  <div v-if="v$.message.$error" class="error">Ce champ est obligatoire.</div>
+
+        <button @click="send">Envoyer</button>
     </form>
     
     <div class="infos">
 
           <div class="info">
 <i class="fas fa-mobile-alt"></i>
-  <span>+33 7 78 64 49 27 </span>
+  <span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
   </div>
        <div class="info">
                    <i class="far fa-clock"></i>
@@ -46,8 +60,47 @@
 </template>
 
 <script>
-export default {
+import { useVuelidate } from '@vuelidate/core'
+import { required, email, alpha, numeric, alphaNum } from '@vuelidate/validators'
 
+export default {
+  setup () {
+    return { v$: useVuelidate() }
+  },
+  data () {
+    return {
+      firstname: '',
+      lastname: '',
+        email: '',
+        tel:'',
+        message:'',
+        business:'',
+                     submitted: false
+
+    }
+  },
+  validations () {
+    return {
+      firstname: { required }, // Matches this.firstName
+      lastname: { required }, // Matches this.lastName
+        email: { required }, // Matches this.contact.email
+        business: { required }, // Matches this.lastName
+      message: { required }, // Matches this.lastName
+      tel: { numeric }, // Matches this.lastName
+            tel: { required }, // Matches this.lastName
+
+
+  
+    }
+  },
+   methods: {
+           async send() {
+                this.submitted = true;
+const isFormCorrect = await this.v$.$validate()
+      // you can show some extra alert to the user or just leave the each field to show it's `$errors`.
+      if (!isFormCorrect) return
+            }
+        }
 }
 </script>
 
@@ -62,11 +115,17 @@ color: white;
 }
 
 .header{
+    display: flex;
+    flex-direction: column;
     padding: 20px 0;
 }
   h1{
               font-size:45px;
               color:white;
+            }
+
+            h2{
+                font-size: 25px;
             }
 
 .infos{
@@ -112,6 +171,10 @@ iframe{
     width: 100%;
 }
 
+.error{
+    color: red;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -133,6 +196,9 @@ box-shadow: rgba(20, 20, 20, 0.24) 0px 3px 8px;    font-size:20px;
 
 .y{
                 color:rgb(255, 208, 0);
+                              font-size:45px;
+
+                
 
 }
 
