@@ -8,16 +8,17 @@
 
 <div class="logo">
     <img src="../assets/logo.png"  class="logo" alt="">
+
 </div>
 <div class="menu-burger" @click="showMenu">
-    <img src="../assets/burgerwhite.png"  class="menu-burger" alt="">
+    <img src="../assets/burgerwhite.webp"  class="menu-burger" alt="">
 </div>
 </div>
 <transition name="nested">
 <div v-if="show" class="nav-menu-mobile">
         <ul>
             <li @click="nav(services[0].id)">Nos Services</li>
-            <li @click="nav([0].id)">A propos de Niantan Démolition</li>
+            <li @click="nav(about[0].id)">A propos de Niantan Démolition</li>
             <li @click="nav(contact[0].id)">Devis</li>
             <li @click="nav(contact[0].id)">Contact</li>
         </ul>
@@ -37,8 +38,8 @@
     <div class="nav-menu">
         <ul>
             <li @click="nav(services[0].id)">Nos Services</li>
-            <li @click="nav(rates[0].id)">A propos de Niantan Démolition</li>
-            <li @click="nav(about[0].id)">Devis</li>
+            <li @click="nav(about[0].id)">A propos de Niantan Démolition</li>
+            <li @click="nav(contact[0].id)">Devis</li>
             <li @click="nav(contact[0].id)">Contact</li>
         </ul>
     </div>
@@ -65,9 +66,7 @@ id: 'services'}],
 about: [
    {
 id: 'about'}],
-rates: [
-   {
-id: 'rates'}],
+
 
         }
     },
@@ -87,7 +86,7 @@ const position = document.getElementById(id).offsetTop;
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .header-mobile,.container-first-row{
     display: none;
@@ -96,9 +95,9 @@ const position = document.getElementById(id).offsetTop;
 .header{
     display: flex;
     justify-content: space-around;
-    background:transparent;
     padding: 15px;
     color:white;
+    animation: movedown 1s ease-in-out;
 }
 .nav-menu{
     display: flex;
@@ -130,6 +129,7 @@ const position = document.getElementById(id).offsetTop;
 }
 .logo{
     height: 30px;
+    width: 97.6px;
 }
 
  button{
@@ -145,6 +145,17 @@ const position = document.getElementById(id).offsetTop;
   
               
               }
+
+                @keyframes movedown {
+
+        0% {
+            transform: translateY(-400px);
+        }
+        100% {
+            transform: translateX(0px);
+    
+        }
+    }
 /*Responsive mobile & tablets*/ 
 
 @media (max-width:1000px) {
@@ -163,6 +174,7 @@ const position = document.getElementById(id).offsetTop;
     }
     .menu-burger{
         height: 35px;
+        width: 42px;
         cursor: pointer;
     }
 

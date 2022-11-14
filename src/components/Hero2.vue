@@ -1,9 +1,13 @@
 <template>
-  <div class="hero-container">
+  <div class="hero-container"> 
+    <div class="container-img">
+        <img src="../assets/1035.webp" alt="" class="background">
+      </div>
     <Header/>
 
 
     <div class="container">
+     
       <div class="text">
 <h1><span class="y">N</span>iantan <span class="y">D</span>emolition</h1>
 <span>Terrassement et démolition</span>
@@ -12,7 +16,7 @@
 </div>
       <div class="picture">
         <div class="pic1">
-      <img src="../assets/5.jpg" class="big" alt="">
+      <img src="../assets/5.webp" class="big" alt="">
       
 
         </div>
@@ -20,7 +24,7 @@
           <div class="pic2">                        <img src="../assets/brok.webp" class="small" alt="">
 </div>
 <div class="pic3">
-            <img src="../assets/2.jpg" class="small" alt="">
+            <img src="../assets/2.webp" class="small" alt="">
 
 </div>
         </div>
@@ -79,21 +83,35 @@ id: 'contact'}],
     justify-content: space-evenly;
     align-items: center;
     padding: 2%;
-    overflow-x: hidden;
 }
 
 //linear-gradient(rgba(10, 0, 156, 0.274),rgba(10, 0, 156, 0.274)),
 .hero-container {
- background:linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.671)),url('../assets/1035.jpg');
- //  background: #000000;
- background-repeat: no-repeat;
-  background-position: left; 
-    background-size: cover;
+min-height: 100vh;
+background: black;
+ background:linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.671)),url('../assets/1035.webp');
+
 
  color: white;
- min-height: 100vh;
+ padding: 0;
+ margin: 0;
 }
 
+.container-img{ 
+   position: absolute;
+display: none;
+
+  z-index: -1;
+
+
+}
+.background{
+  object-fit: cover;
+    width: 100vw;
+    filter: brightness(50%);
+
+
+}
 .text {
     text-align: left;
     width: 50%;
@@ -200,10 +218,17 @@ id: 'contact'}],
 
 
 
-@media (max-width:900px) {
+@media (max-width:1100px) {
 
+.hero-container{
+      background: black;
+
+}
   .container{
     flex-direction: column;
+  }
+  .background{ 
+    display: none;
   }
   .text {
     margin: 2% 0 0 0;
@@ -236,15 +261,7 @@ id: 'contact'}],
     flex-direction: row;
  }
 
- .hero-container {
- background:linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.671)),url('../assets/p.png');
- //  background: #000000;
- background-repeat: no-repeat;
-  background-position: right; 
-    background-size: cover;
 
-
-}
 }
 @media (max-width:600px) {
    .picture{

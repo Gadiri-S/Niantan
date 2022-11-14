@@ -7,18 +7,18 @@
 </div>
     <div class="container">
   
-  <div class="value">
-    <span><i class="far fa-check-circle"></i> Intégrité</span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod aperiam officiis impedit dignissimos voluptatem, voluptate ipsum voluptas sequi qui fuga suscipit, eos earum temporibus nihil ipsam? Odio, placeat numquam!</p>
+  <div class="value fade">
+    <span><font-awesome-icon icon="far fa-check-circle" /> Intégrité</span>
+    <p>Nous avons la conviction absolue que l'intégrité, l'honnêteté et la transparence ne sont pas des valeurs négociables dans le secteur du bâtiment.</p>
   </div>
-    <div class="value">
-    <span> <i class="far fa-check-circle"></i> Ponctualité</span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod aperiam officiis impedit dignissimos voluptatem, voluptate ipsum voluptas sequi qui fuga suscipit, eos earum temporibus nihil ipsam? Odio, placeat numquam!</p>
+    <div class="value fade">
+    <span> <font-awesome-icon icon="far fa-check-circle" /> Ponctualité</span>
+    <p>Un chantier en retard représente une perte financière énorme ainsi qu'une paralysie parfois fatale de votre activité. Chez Niantan Démolition nous mettons tout en ordre pour répondre en un plus bref délai à vos exigeances. <br> Avec Niantan Démolition, fini les chantiers qui s'éternisent!</p>
 
   </div>
-    <div class="value">
-    <span> <i class="far fa-check-circle"></i> Profesionnalisme</span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod aperiam officiis impedit dignissimos voluptatem, voluptate ipsum voluptas sequi qui fuga suscipit, eos earum temporibus nihil ipsam? Odio, placeat numquam!</p>
+    <div class="value fade">
+    <span> <font-awesome-icon icon="far fa-check-circle" /> Profesionnalisme</span>
+    <p>L'utilisation d'équipement non adapté ainsi que le recours à une main d'oeuvre non qualifiée sont tout autant d'éléments qui peuvent conduire vos travaux à s'éterniser et, sur le long terme, mettre à mal vos finances. C'est pour cela que Niantan Démolition ne fait recours qu'à une main d'oeuvre qualifiée et des équipements parfaitement adaptés à vos besoins.</p>
 
   </div>
  
@@ -40,29 +40,35 @@ export default {
   components: {
   },
 
-  data() {
-    return {
-image:"",
-products:"",
-selected:false,
-     contact: [
-   {
-id: 'contact'}],
 
-    }
-  
-  }, 
+    data(){
+        return {
 
-  methods:{
-
-
-       nav(id) {
-
-        const position = document.getElementById(id).offsetTop;
-          // smooth scroll
-         window.scrollTo({ top: position, behavior: "smooth" });  
+        }
     },
-
+    mounted() { 
+this.fadeInElements = Array.from(document.getElementsByClassName('fade'));
+document.addEventListener('scroll', this.handleScroll)
+},
+destroyed() { 
+  document.removeEventListener('scroll', this.handleScroll)
+},
+    methods:{
+      isElemVisible(el) {
+    const rect = el.getBoundingClientRect()
+    const elemTop = rect.top + 200 // buffer
+    const elemBottom = rect.bottom
+    return elemTop < window.innerHeight && elemBottom >= 0
+},
+  handleScroll() {
+    for (let i = 0; i < this.fadeInElements.length; i++) {
+    const elem = this.fadeInElements[i]
+    if (this.isElemVisible(elem)) {
+        elem.style.opacity = '1'
+        elem.style.transform = 'scale(1)'
+        this.fadeInElements.splice(i, 1) // Pour jouer l'animation seulement une fois
+    }
+    }}
   }
 
 }
@@ -87,7 +93,11 @@ id: 'contact'}],
  color: white;
  min-height: 100vh;
 }
-
+.fade {
+  opacity: 0;  
+	transition: 0.3s all ease-out;  
+	transform: scale(0.8);  
+	box-sizing: border-box;  }
 .text {
     text-align: center;
     width: 100%;
@@ -97,7 +107,7 @@ id: 'contact'}],
 
     h1,.y {
               font-size:45px;
-            margin-bottom: 25px;
+            padding: 25px 0;
             text-transform: uppercase;
 
             }
@@ -129,11 +139,12 @@ id: 'contact'}],
 
             p{
                 line-height: 30px;
+                padding: 15px;
+                text-align: left;
             }
             display: flex;
             flex-direction: column;
             width: 350px;
-            height: 350px;
             margin: 15px;
             border-radius: 15px;
     background: rgb(43, 43, 43);
@@ -145,13 +156,7 @@ id: 'contact'}],
 
 
 
-@media (max-width:900px) {
 
-
- 
- 
-
-}
 
 @media (max-width:700px) {
 

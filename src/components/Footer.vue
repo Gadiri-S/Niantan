@@ -14,35 +14,35 @@
 <div class="links">
     <span class="title">Liens</span>
     <ul>
-      <li>Nos Services</li>
+      <li @click="nav(services[0].id)">Nos Services</li>
 
-     <li>A propos de Niantan Demolition</li>
-     <li  @click="nav(reviews[0].id)">Devis</li>
+     <li @click="nav(about[0].id)">A propos de Niantan Demolition</li>
+     <li  @click="nav(contact[0].id)">Devis</li>
     <li  @click="nav(contact[0].id)">Contact</li>
     </ul>
 </div>
   <div class="address">
 <span class="title">Nous joindre</span>
           <div class="info">
-<i class="fas fa-mobile-alt"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-mobile-alt" /> 
   <span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
   </div>
        <div class="info">
-                   <i class="far fa-clock"></i>
+<font-awesome-icon color="#FFCC00" icon="far fa-clock" /> 
   <span>Lundi à Samedi : 7h - 19h</span>
   </div>
 
 
    <div class="info">
-  <i class="fas fa-envelope"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-envelope" />
   <span>Niantandemolition@gmail.com</span>
   </div>
      <div class="info">
-<i class="fas fa-map-marker-alt"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-map-marker-alt" />
   <span>45 bis Boulevard Davout, 75020 Paris</span>
   </div>
         <div class="info">
-<i class="fas fa-subway"></i>  <span>Stations Porte de Montreuil ou Porte de Vincennes</span>
+<font-awesome-icon color="#FFCC00" icon="fas fa-subway" /> <span>Stations Porte de Montreuil ou Porte de Vincennes</span>
   </div>
         
     </div>
@@ -59,12 +59,12 @@ name:'Footer',
          contact:[
    {
 id: 'contact'}],
-     faq:[
+     services:[
    {
-id: 'faq'}],
-   reviews:[
+id: 'services'}],
+   about:[
    {
-id: 'reviews'}]
+id: 'about'}]
   
       }
     },
@@ -100,8 +100,10 @@ const position = document.getElementById(id).offsetTop;
         display: flex;
         align-items: center;
     .logo-footer{
-        height: 50px;
-        width: auto;
+   
+    height: 30px;
+    width: 97.6px;
+
     }
     span{
 
@@ -190,7 +192,7 @@ const position = document.getElementById(id).offsetTop;
 
             }
 
-                i{
+                span{
                     margin: 0 5px;
                 }
 }

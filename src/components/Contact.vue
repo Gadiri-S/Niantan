@@ -33,30 +33,30 @@
     <div class="infos">
 
           <div class="info">
-<i class="fas fa-mobile-alt"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-mobile-alt" />
   <span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
   </div>
        <div class="info">
-                   <i class="far fa-clock"></i>
-  <span>Lundi à Samedi : 7h - 19h</span>
+<font-awesome-icon color="#FFCC00" icon="far fa-clock" />
+<span>Lundi à Samedi : 7h - 19h</span>
   </div>
 
 
    <div class="info">
-  <i class="fas fa-envelope"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-envelope" />
   <span>Niantandemolition@gmail.com</span>
   </div>
      <div class="info">
-<i class="fas fa-map-marker-alt"></i>
+<font-awesome-icon color="#FFCC00" icon="fas fa-map-marker-alt" />
   <span>45 bis Boulevard Davout, 75020 Paris</span>
   </div>
         <div class="info">
-<i class="fas fa-subway"></i>  <span>Stations Porte de Montreuil ou Porte de Vincennes</span>
+<font-awesome-icon color="#FFCC00" icon="fas fa-subway" />  <span>Stations Porte de Montreuil ou Porte de Vincennes</span>
   </div>
         
     </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.382407658975!2d2.411002513585662!3d48.85091788134698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6727e19d6e61b%3A0x5d3218b5f9fdc607!2s45%20Bd%20Davout%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1667895568309!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.382407658975!2d2.411002513585662!3d48.85091788134698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6727e19d6e61b%3A0x5d3218b5f9fdc607!2s45%20Bd%20Davout%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1667895568309!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="niantan-demolition-location"></iframe>  </div>
 </template>
 
 <script>
@@ -113,7 +113,10 @@ color: white;
             word-break:normal;
 
 }
-
+  .fa-solid{
+        margin: 0 10px;
+        color:rgb(255, 208, 0);
+    }
 .header{
     display: flex;
     flex-direction: column;
@@ -139,14 +142,13 @@ align-items: center;
     display: flex;
     font-size:25px;
 color: white;
-    font-weight: 700;
+    font-weight: 500;
     padding: 25px 0;
 
-    i{
-        margin: 0 10px;
-        color:rgb(255, 208, 0);
-    }
-
+  
+span{
+  margin-left: 10px;
+}
 
 }
 }
@@ -156,6 +158,10 @@ button{
     color: white;
     margin: 10px 0;
             transition: .4s ease-in-out;
+            font-size: 25px;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
 
 
     &:hover{

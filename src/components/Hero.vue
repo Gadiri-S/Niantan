@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="hero-container">
 
     <Header/>
@@ -130,4 +130,4 @@ padding-top: 10%;
 padding-top: 10%;
 }
 }
-</style>
+</style> -->

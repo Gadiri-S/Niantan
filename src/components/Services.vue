@@ -12,7 +12,7 @@
             <span>Démolition</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
            </div>
           <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
 
@@ -23,7 +23,7 @@
             <span>Térrassement</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>Le térrassement consiste à modifier le relief d’un terrain. Cela passe par le déplacement de quantités importantes de matériaux (sable, terre, graviers...). Le terrassement passe généralement par trois étapes : l’extraction, le transport et la mise en œuvre. De nombreuses machines peuvent être utilisées ces travaux comme : la mini pelle, la pelleteuse, la chargeuse ou encore le bulldozer.</p>
            </div>
            <div class="img-container"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
            <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
@@ -60,7 +60,7 @@ encore l'amiante.</p>
             <span>Remise aux normes</span>
             <div class="underline-title"></div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quos. Alias molestias at facilis excepturi!</p>
+            <p>Appelée aussi mise aux normes électriques, la mise en conformité consiste à rénover l'installation électrique existante et à refaire à neuf l'électricité d'un logement, selon la norme NF C 15-100. Elle est obligatoire pour tout projet de construction ou d'agrandissement d'un logement existant.</p>
            </div>
                    <div class="img-container"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
                    <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
@@ -68,7 +68,7 @@ encore l'amiante.</p>
       </div>
          
             <div class="card">
-          <div class="img-container"> <img src="../assets/f.jpg"  class="img fade" alt=""></div>
+          <div class="img-container"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
            <div class="card-text">
             <span>Néttoyage après incendie</span>
             <div class="underline-title"></div>
@@ -76,7 +76,7 @@ encore l'amiante.</p>
             <p>Un nettoyage professionnel après incendie s&#39;impose dans la majorité des cas. Les premières 48 Heures sont
 déterminantes. Notre mission est de sécuriser la zone et de prendre soin des biens matériaux pouvant être remis en état.</p>
            </div>
-          <div class="img-container-mobile"> <img src="../assets/f.jpg"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
 
       </div>
      
@@ -192,6 +192,7 @@ word-break: break-word;
 
 .card {
 display: flex;
+align-items: center;
   font-size: 1.2rem;
   color: white;
   padding: 25px;
