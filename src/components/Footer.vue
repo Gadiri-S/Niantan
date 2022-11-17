@@ -1,9 +1,10 @@
 <template>
+<div class="container" >
   <div class="footer">
 
 <div class="company">
     <div class="logo">
-        <img src="../assets/logo.png" class="logo-footer" alt="logo">
+        <img src="../assets/logo2.png" class="logo-footer" alt="logo">
     </div>
     <div class="presentation">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo, veritatis beatae cupiditate minus adipisci!</p>
@@ -49,6 +50,7 @@
 
 
   </div>
+  </div>
 </template>
 
 <script>
@@ -80,15 +82,19 @@ const position = document.getElementById(id).offsetTop;
 </script>
 
 <style lang='scss' scoped>
+.container{
+        background: black;
 
+}
 .footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 2%;
-    background: black;
     color: white;;
         text-align: left;
+        max-width: 2000px;
+margin: auto;
 
     
 }
@@ -101,9 +107,9 @@ const position = document.getElementById(id).offsetTop;
         align-items: center;
     .logo-footer{
    
-    height: 30px;
-    width: 97.6px;
-
+    height: 25px;
+    width: 53.36;
+  
     }
     span{
 

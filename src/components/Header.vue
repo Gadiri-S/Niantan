@@ -7,7 +7,7 @@
         <div class="container-first-row">
 
 <div class="logo">
-    <img src="../assets/logo.png"  class="logo" alt="">
+    <img src="../assets/logo2.png"  class="logo" alt="">
 
 </div>
 <div class="menu-burger" @click="showMenu">
@@ -32,7 +32,7 @@
  <div class="header">
 
     <div class="logo">
-        <img src="../assets/logo.png"  class="logo" alt="">
+        <img src="../assets/logo2.png"  class="logo" alt="">
     </div>
 
     <div class="nav-menu">
@@ -98,6 +98,8 @@ const position = document.getElementById(id).offsetTop;
     padding: 15px;
     color:white;
     animation: movedown 1s ease-in-out;
+            max-width: 2000px;
+margin: auto;
 }
 .nav-menu{
     display: flex;
@@ -128,8 +130,9 @@ const position = document.getElementById(id).offsetTop;
 }
 }
 .logo{
-    height: 30px;
-    width: 97.6px;
+    height: 25px;
+    width: 53.36;
+  
 }
 
  button{

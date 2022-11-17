@@ -1,6 +1,7 @@
 
 
 <template>
+<div class="container">
   <div class="services">
 
 <h1><span class="y">N</span>OS <span class="y">S</span>ERVICES</h1>
@@ -12,9 +13,23 @@
             <span>Démolition</span>
             <div class="underline-title"></div>
 
-            <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
+            <p>Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
            </div>
           <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
+
+      </div>
+      
+        <div class="card-mobile">
+               <div class="card-text">
+            <span>Démolition</span>
+            <div class="underline-title"></div>
+
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+                    <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
+
+      </div>
 
       </div>
      
@@ -26,11 +41,22 @@
             <p>Le térrassement consiste à modifier le relief d’un terrain. Cela passe par le déplacement de quantités importantes de matériaux (sable, terre, graviers...). Le terrassement passe généralement par trois étapes : l’extraction, le transport et la mise en œuvre. De nombreuses machines peuvent être utilisées ces travaux comme : la mini pelle, la pelleteuse, la chargeuse ou encore le bulldozer.</p>
            </div>
            <div class="img-container"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
-           <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
 
       </div>
 
-     
+        <div class="card-mobile">
+               <div class="card-text">
+            <span>Térrassement</span>
+            <div class="underline-title"></div>
+
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+            <p>Le térrassement consiste à modifier le relief d’un terrain. Cela passe par le déplacement de quantités importantes de matériaux (sable, terre, graviers...). Le terrassement passe généralement par trois étapes : l’extraction, le transport et la mise en œuvre. De nombreuses machines peuvent être utilisées ces travaux comme : la mini pelle, la pelleteuse, la chargeuse ou encore le bulldozer.</p>
+
+      </div>
+
+      </div>
       
 
       </div>
@@ -50,9 +76,24 @@
 les cloisons, les revêtements mais aussi le béton détérioré et surtout tous les matériaux de construction contaminés par le plomb ou
 encore l'amiante.</p>
            </div>
-          <div class="img-container-mobile"> <img src="../assets/handy.webp"  class="img fade" alt=""></div>
 
       </div>
+
+  <div class="card-mobile">
+               <div class="card-text">
+            <span>Curage</span>
+            <div class="underline-title"></div>
+
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/handy.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+   <p>Le curage est une opération consistant à nettoyer un bâtiment de tous ses éléments non constructifs, c'est-à-dire les menuiseries,
+les cloisons, les revêtements mais aussi le béton détérioré et surtout tous les matériaux de construction contaminés par le plomb ou
+encore l'amiante.</p>
+      </div>
+
+      </div>
+
      
       <div class="card">
 
@@ -63,9 +104,25 @@ encore l'amiante.</p>
             <p>Appelée aussi mise aux normes électriques, la mise en conformité consiste à rénover l'installation électrique existante et à refaire à neuf l'électricité d'un logement, selon la norme NF C 15-100. Elle est obligatoire pour tout projet de construction ou d'agrandissement d'un logement existant.</p>
            </div>
                    <div class="img-container"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
-                   <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
 
       </div>
+
+
+  <div class="card-mobile">
+               <div class="card-text">
+            <span>Remise aux normes</span>
+            <div class="underline-title"></div>
+
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+               <p>Appelée aussi mise aux normes électriques, la mise en conformité consiste à rénover l'installation électrique existante et à refaire à neuf l'électricité d'un logement, selon la norme NF C 15-100. Elle est obligatoire pour tout projet de construction ou d'agrandissement d'un logement existant.</p>
+
+      </div>
+
+      </div>
+
+
          
             <div class="card">
           <div class="img-container"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
@@ -76,10 +133,21 @@ encore l'amiante.</p>
             <p>Un nettoyage professionnel après incendie s&#39;impose dans la majorité des cas. Les premières 48 Heures sont
 déterminantes. Notre mission est de sécuriser la zone et de prendre soin des biens matériaux pouvant être remis en état.</p>
            </div>
-          <div class="img-container-mobile"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
 
       </div>
-     
+       <div class="card-mobile">
+               <div class="card-text">
+            <span>Néttoyage après incendie</span>
+            <div class="underline-title"></div>
+
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+<p>Un nettoyage professionnel après incendie s&#39;impose dans la majorité des cas. Les premières 48 Heures sont
+déterminantes. Notre mission est de sécuriser la zone et de prendre soin des biens matériaux pouvant être remis en état.</p>
+      </div>
+
+      </div>
       <div class="card">
 
            <div class="card-text">
@@ -91,12 +159,25 @@ la décoration de votre appartement ou maison. L'objectif est d&#39;adapter cell
 grand nombre dans le cadre d'une vente ou d'une location.</p>
            </div>
                    <div class="img-container"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
-                   <div class="img-container-mobile"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
 
       </div>
+       <div class="card-mobile">
+               <div class="card-text">
+            <span>Raffraîchissement</span>
+            <div class="underline-title"></div>
 
+           </div>
+          <div class="img-container-mobile"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
+      <div class="card-text">
+            <p>Il s'agit de travaux qui touchent principalement à
+la décoration de votre appartement ou maison. L'objectif est d&#39;adapter celle-ci à votre goût si vous occupez le logement ou au goût du plus
+grand nombre dans le cadre d'une vente ou d'une location.</p>
+      </div>
+
+      </div>
           </div>
    
+  </div>
   </div>
 </template>
 
@@ -137,17 +218,22 @@ destroyed() {
 
 <style lang="scss" scoped>
 
+.container{
+ 
+      background:rgb(34, 34, 34);
+}
 
 .services {
     color:white;
-    background:rgb(34, 34, 34);
+
     background-position: center;
     background-size: cover;
      background-repeat: no-repeat;
-            min-height: 100vh;
             padding: 3%;
 word-break: break-word;
-           
+
+            max-width: 2000px;
+  margin: auto;
 
 }
 
@@ -181,7 +267,7 @@ word-break: break-word;
 }
 
 .img {
-    height: 350px;
+    height: 100%;
     width: 450px;
     object-fit: cover;
     border-radius: 15px;
@@ -192,16 +278,22 @@ word-break: break-word;
 
 .card {
 display: flex;
+justify-content: space-between;
 align-items: center;
   font-size: 1.2rem;
   color: white;
-  padding: 25px;
+  padding: 25px 0;
 
 
 }
 
+.card-mobile{
+  display: none;
+}
+
 .img-container{
   width: 50%;
+  height: auto;
 }
 .card-text{
   width: 50%;
@@ -221,7 +313,7 @@ align-items: center;
 }
 
 
-@media (max-width:1100px) {
+@media (max-width:980px) {
 
   .img-container{
   display: none;
@@ -229,27 +321,31 @@ align-items: center;
 
 .services{
 .card{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding: 0;
+  display:none;
 }
 
-.card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-}
 
+}
+.card-mobile{
+  display: block;
+
+  .card-text{
+      margin: 15px auto;
+
+    p{
+      font-size: 20px;
+    }
+  }
+}
 
 
 .img-container-mobile{
   display: block;
   width: 90%;
+
 }
 .img{
-  height: 300px;
+  height: 500px;
   width: 300px;
 }
 
@@ -261,25 +357,15 @@ align-items: center;
 }
 
 
-@keyframes moveright {
-0% {
-    transform: translateX(500px);
-}
-100% {
-    transform: translateX(0px);
-}
-}
 
 
 
 @media (max-width:700px) {
 
-  .img{
-  height: 250px;
-  width: 90%;
-}
+
 
 .card-text{
+
   width: 90%;
   margin: 5px;
   font-size: 20px;
@@ -288,11 +374,19 @@ align-items: center;
     font-size:35px
   }
 }
- 
+ .card-mobile{
+  display: block;
+  margin: auto;
+
+  .card-text{
+    p{
+      font-size: 16px;
+    }
+  }
 }
 
-@media (max-width:701px) {
-
 }
+
+
 </style>
 

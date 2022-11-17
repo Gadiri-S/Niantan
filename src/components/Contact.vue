@@ -1,4 +1,6 @@
 <template>
+
+<div class="wrapper">
   <div class="container">
 
     <div class="header">
@@ -8,27 +10,38 @@
     </div>
 
 
-    <form @submit.prevent="handleSubmit">
-        <input type="text" placeholder="Prenom*" v-model="firstname"  @blur="v$.firstname.$touch" required>
+<div v-if="isFormCorrect">
+<div class="success">
+  <span>Votre message a bien été envoyé</span>
+<span class="icon">  <font-awesome-icon  icon="far fa-check-circle" /></span>
+
+</div>
+</div>
+<div v-else>
+  <form ref="form" @submit.prevent="handleSubmit">
+        <input type="text" placeholder="Prenom*" v-model="firstname" name='firstname'  @blur="v$.firstname.$touch" required>
           <div v-if="v$.firstname.$error" class="error">Ce champ est obligatoire.</div>
         
-        <input type="text" placeholder="Nom de famille*" v-model="lastname" @blur="v$.lastname.$touch" required> 
+        <input type="text" placeholder="Nom de famille*" v-model="lastname" name='lastname'  @blur="v$.lastname.$touch" required> 
                   <div v-if="v$.lastname.$error" class="error">Ce champ est obligatoire.</div>
         
-        <input type="email" placeholder="Email*" v-model="email" @blur="v$.email.$touch" required>
+        <input type="email" placeholder="Email*" v-model="email" name='email' @blur="v$.email.$touch" required>
                   <div v-if="v$.email.$error" class="error">Veuillez entrer une adresse email valide.</div>
        
-        <input type="tel" placeholder="Telephone*" v-model="tel" @blur="v$.tel.$touch" required>
+        <input type="tel" placeholder="Telephone*" v-model="tel" name='tel'  @blur="v$.tel.$touch" required>
                   <div v-if="v$.tel.$error" class="error">Veuillez entrer un numéro de téléphone valide.</div>
         
-        <input type="text" placeholder="Nom de la société*" v-model="business" @blur="v$.business.$touch" required>
+        <input type="text" placeholder="Nom de la société*" v-model="business" name='business' @blur="v$.business.$touch" required>
                   <div v-if="v$.business.$error" class="error">Ce champ est obligatoire.</div>
        
-        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message*" v-model="message" @blur="v$.message.$touch" required></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message*" v-model="message" @blur="v$.message.$touch" required></textarea>
                   <div v-if="v$.message.$error" class="error">Ce champ est obligatoire.</div>
 
         <button @click="send">Envoyer</button>
+
     </form>
+</div>
+    
     
     <div class="infos">
 
@@ -57,11 +70,13 @@
     </div>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.382407658975!2d2.411002513585662!3d48.85091788134698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6727e19d6e61b%3A0x5d3218b5f9fdc607!2s45%20Bd%20Davout%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1667895568309!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="niantan-demolition-location"></iframe>  </div>
+</div>
 </template>
 
 <script>
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, alpha, numeric, alphaNum } from '@vuelidate/validators'
+import emailjs from '@emailjs/browser';
 
 export default {
   setup () {
@@ -75,6 +90,7 @@ export default {
         tel:'',
         message:'',
         business:'',
+        isFormCorrect:"",
                      submitted: false
 
     }
@@ -93,25 +109,70 @@ export default {
   
     }
   },
+    created() {
+            setTimeout(() => this.isFormCorrect = false, 1000)
+        },
    methods: {
            async send() {
                 this.submitted = true;
-const isFormCorrect = await this.v$.$validate()
+const isFormCorrect = await this.v$.$validate();
+this.isFormCorrect = isFormCorrect
+
+/*if (isFormCorrect==true) {
+emailjs.sendForm('service_qx8ql38', 'template_wlflq6g', this.$refs.form, 'iMSRNYA0xKflKPitU')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });}
+
+
+    
+*/
+
+
       // you can show some extra alert to the user or just leave the each field to show it's `$errors`.
-      if (!isFormCorrect) return
+      if (!isFormCorrect) return console.log('error')
             }
         }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.wrapper{
+
+    background: #000000;
+
+}
+.success{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 450px;
+  border-radius: 15px;
+    background: rgb(43, 43, 43);
+    color: rgb(0, 255, 179);
+    margin: auto;
+
+  span{
+    font-size: 25px;
+    color: rgb(0, 255, 179);
+        margin: 25px auto;
+
+  }
+  .icon{
+     font-size: 45px;
+    color: rgb(0, 255, 179);
+    margin: 25px auto;
+  }
+}
 .container{
     padding:2%;
-    min-height: 100vh;
-  background: #000000;
 color: white;
             word-break:normal;
-
+   max-width: 2000px;
+  margin: auto;
 }
   .fa-solid{
         margin: 0 10px;
@@ -136,6 +197,8 @@ color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+
 
 .info{
 
@@ -184,7 +247,7 @@ iframe{
 form{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 550px;
     margin: 25px auto;
     background: rgb(43, 43, 43);
     padding: 20px;
@@ -216,5 +279,17 @@ box-shadow: rgba(20, 20, 20, 0.24) 0px 3px 8px;    font-size:20px;
                 span{
                     font-size: 18px;
                 }
+
+                              .success{
+
+  height: 300px;
+  width: 90%;
+  padding: 15px;
+
+ 
+
+  }
               }
+
+
 </style>

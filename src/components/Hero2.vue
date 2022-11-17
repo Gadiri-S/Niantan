@@ -1,7 +1,6 @@
 <template>
   <div class="hero-container"> 
     <div class="container-img">
-        <img src="../assets/1035.webp" alt="" class="background">
       </div>
     <Header/>
 
@@ -83,14 +82,19 @@ id: 'contact'}],
     justify-content: space-evenly;
     align-items: center;
     padding: 2%;
+    overflow-x: hidden;
+        max-width: 2000px;
+margin: auto;      
+
 }
 
 //linear-gradient(rgba(10, 0, 156, 0.274),rgba(10, 0, 156, 0.274)),
 .hero-container {
-min-height: 100vh;
 background: black;
  background:linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.671)),url('../assets/1035.webp');
-
+ background-size: cover;
+  box-sizing: border-box;
+  background-position: top;
 
  color: white;
  padding: 0;
@@ -248,7 +252,7 @@ display: none;
  
  
  .container-small{
-  display: flex;
+  display: none;
     flex-direction: column;
  }
 }

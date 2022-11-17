@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     
-    <Hero2/>
-    <Services id='services'/>
-    <About id='about'/>
+    <Hero2 v-once />
+    <Services id='services' v-once />
+    <About id='about' v-once />
     <Contact id='contact'/>
-    <Footer/>
+    <Footer v-once />
 
   </div>
 </template>
@@ -33,3 +33,9 @@ export default {
 }
 
 </script>
+
+<style scoped>
+.home{
+
+}
+</style>

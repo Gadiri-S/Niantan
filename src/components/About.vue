@@ -83,6 +83,8 @@ destroyed() {
     padding: 2%;
     overflow-x: hidden;
     flex-wrap: wrap;
+    max-width: 2000px;
+    margin: auto;
 }
 
 //linear-gradient(rgba(10, 0, 156, 0.274),rgba(10, 0, 156, 0.274)),
@@ -91,7 +93,6 @@ destroyed() {
 
 
  color: white;
- min-height: 100vh;
 }
 .fade {
   opacity: 0;  
