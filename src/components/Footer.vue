@@ -7,7 +7,7 @@
         <img src="../assets/logo2.png" class="logo-footer" alt="logo">
     </div>
     <div class="presentation">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo, veritatis beatae cupiditate minus adipisci!</p>
+        <p>Niantan Démolition est une société spécialisée dans les travaux de démolition et de térrassement mais dispose aussi d'une expertise dans les travaux d'aménagements. Nous opérons dans toute la région d'Ile-de-France.</p>
     </div>
 
 </div>

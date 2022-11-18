@@ -10,20 +10,21 @@
       <div class="text">
 <h1><span class="y">N</span>iantan <span class="y">D</span>emolition</h1>
 <span>Terrassement et démolition</span>
+<p>Niantan Démolition est une société spécialisée dans les travaux de démolition et de térrassement mais dispose aussi d'une expertise dans les travaux d'aménagements. Nous opérons dans toute la région d'Ile-de-France.</p>
 
 <div><button  @click="nav(contact[0].id)">Demander un devis</button></div>
 </div>
       <div class="picture">
         <div class="pic1">
-      <img src="../assets/5.webp" class="big" alt="">
+      <img src="../assets/demolition.webp" class="big" alt="">
       
 
         </div>
         <div class="container-small">
-          <div class="pic2">                        <img src="../assets/brok.webp" class="small" alt="">
+          <div class="pic2">                        <img src="../assets/excavator.webp" class="small" alt="">
 </div>
 <div class="pic3">
-            <img src="../assets/2.webp" class="small" alt="">
+            <img src="../assets/terrassement.webp" class="small" alt="">
 
 </div>
         </div>
@@ -91,7 +92,7 @@ margin: auto;
 //linear-gradient(rgba(10, 0, 156, 0.274),rgba(10, 0, 156, 0.274)),
 .hero-container {
 background: black;
- background:linear-gradient(rgba(0, 0, 0, 0.747),rgba(0, 0, 0, 0.671)),url('../assets/1035.webp');
+ background:linear-gradient(rgba(0, 0, 0, 0.847),rgba(0, 0, 0, 0.871)),url('../assets/1035.webp');
  background-size: cover;
   box-sizing: border-box;
   background-position: top;
@@ -148,7 +149,9 @@ display: none;
               font-size: 35px;
             }
 
-
+      p{
+        font-size: 20px;
+      }
             button{
               font-size: 25px;
               border: 1px solid white;

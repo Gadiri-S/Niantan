@@ -8,14 +8,13 @@
       <div class="card-container">
  
       <div class="card">
-          <div class="img-container"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
+          <div class="img-container"> <img src="../assets/demolition-services.webp"  class="img fade" alt=""></div>
            <div class="card-text">
             <span>Démolition</span>
             <div class="underline-title"></div>
 
             <p>Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
            </div>
-          <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
 
       </div>
       
@@ -25,7 +24,7 @@
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/d.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/demolition-services.webp"  class="img fade" alt=""></div>
       <div class="card-text">
                     <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
 
@@ -341,7 +340,6 @@ align-items: center;
 
 .img-container-mobile{
   display: block;
-  width: 90%;
 
 }
 .img{
