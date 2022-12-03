@@ -5,6 +5,8 @@ import store from './store'
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
+import { MotionPlugin } from '@vueuse/motion'
+
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -25,5 +27,5 @@ import { faCheckCircle} from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
 library.add(faUserSecret,faEnvelope,faMobileAlt,faSubway,faClock,faMapMarkerAlt,faCheckCircle)
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(store).use(router).mount('#app')
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(store).use(router).use(MotionPlugin).mount('#app')
  

@@ -4,16 +4,16 @@
 <div class="container">
   <div class="services">
 
-<h1><span class="y">N</span>OS <span class="y">S</span>ERVICES</h1>
+<h1><span class="y">N</span>OS <span class="yellow-highliner">S</span>ERVICES</h1>
       <div class="card-container">
  
       <div class="card">
-          <div class="img-container"> <img src="../assets/demolition-services.webp"  class="img fade" alt=""></div>
+          <div class="img-container"> <img src="../assets/demolition-services.webp"  class="img fade" alt="Engin de démolition sur un chantier"></div>
            <div class="card-text">
             <span>Démolition</span>
             <div class="underline-title"></div>
 
-            <p>Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
+                    <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
            </div>
 
       </div>
@@ -24,7 +24,7 @@
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/demolition-services.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/demolition-services.webp"  class="img fade" alt="Engin de démolition sur un chantier"></div>
       <div class="card-text">
                     <p>La démolition est la science et l'ingénierie permettant de démolir en toute sécurité et efficacement des bâtiments et d'autres structures artificielles. Pour les petits bâtiments, comme les maisons, qui n'ont que deux ou trois étages, la démolition est un processus assez simple. Le bâtiment est abattu manuellement ou mécaniquement à l'aide de gros équipements hydrauliques : nacelles élévatrices, grues, excavatrices ou bulldozers. Les bâtiments plus grands peuvent nécessiter l'utilisation d'une boule de démolition, un poids lourd sur un câble qui est balancé par une grue sur le côté des bâtiments.</p>
 
@@ -39,7 +39,7 @@
 
             <p>Le térrassement consiste à modifier le relief d’un terrain. Cela passe par le déplacement de quantités importantes de matériaux (sable, terre, graviers...). Le terrassement passe généralement par trois étapes : l’extraction, le transport et la mise en œuvre. De nombreuses machines peuvent être utilisées ces travaux comme : la mini pelle, la pelleteuse, la chargeuse ou encore le bulldozer.</p>
            </div>
-           <div class="img-container"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
+           <div class="img-container"> <img src="../assets/e.webp"  class="img fade" alt="Engin de térrassement sur un chantier"></div>
 
       </div>
 
@@ -49,7 +49,7 @@
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/e.webp"  class="img fade" alt="Engin de térrassement sur un chantier"></div>
       <div class="card-text">
             <p>Le térrassement consiste à modifier le relief d’un terrain. Cela passe par le déplacement de quantités importantes de matériaux (sable, terre, graviers...). Le terrassement passe généralement par trois étapes : l’extraction, le transport et la mise en œuvre. De nombreuses machines peuvent être utilisées ces travaux comme : la mini pelle, la pelleteuse, la chargeuse ou encore le bulldozer.</p>
 
@@ -62,11 +62,11 @@
 
 
           <div class="additional-services">
-            <h1><span class="y">N</span>os <span class="y">s</span>ervices <span class="y">a</span>dditionnels</h1>
+            <h1><span class="yellow-highliner">N</span>os <span class="yellow-highliner">s</span>ervices <span class="yellow-highliner">a</span>dditionnels</h1>
 
 
             <div class="card">
-          <div class="img-container"> <img src="../assets/handy.webp"  class="img fade" alt=""></div>
+          <div class="img-container"> <img src="../assets/handy.webp"  class="img fade" alt="Ouvrier  en train de curer le mur d'un appaertement"></div>
            <div class="card-text">
             <span>Curage</span>
             <div class="underline-title"></div>
@@ -84,7 +84,7 @@ encore l'amiante.</p>
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/handy.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/handy.webp"  class="img fade" alt="Ouvrier  en train de curer le mur d'un appaertement"></div>
       <div class="card-text">
    <p>Le curage est une opération consistant à nettoyer un bâtiment de tous ses éléments non constructifs, c'est-à-dire les menuiseries,
 les cloisons, les revêtements mais aussi le béton détérioré et surtout tous les matériaux de construction contaminés par le plomb ou
@@ -102,7 +102,7 @@ encore l'amiante.</p>
 
             <p>Appelée aussi mise aux normes électriques, la mise en conformité consiste à rénover l'installation électrique existante et à refaire à neuf l'électricité d'un logement, selon la norme NF C 15-100. Elle est obligatoire pour tout projet de construction ou d'agrandissement d'un logement existant.</p>
            </div>
-                   <div class="img-container"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
+                   <div class="img-container"> <img src="../assets/elec.webp"  class="img fade" alt="Electricien en train de travailler"></div>
 
       </div>
 
@@ -113,7 +113,7 @@ encore l'amiante.</p>
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/elec.webp"  class="img fade" alt="Electricien en train de travailler"></div>
       <div class="card-text">
                <p>Appelée aussi mise aux normes électriques, la mise en conformité consiste à rénover l'installation électrique existante et à refaire à neuf l'électricité d'un logement, selon la norme NF C 15-100. Elle est obligatoire pour tout projet de construction ou d'agrandissement d'un logement existant.</p>
 
@@ -124,7 +124,7 @@ encore l'amiante.</p>
 
          
             <div class="card">
-          <div class="img-container"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
+          <div class="img-container"> <img src="../assets/f.webp"  class="img fade" alt="Flammes"></div>
            <div class="card-text">
             <span>Néttoyage après incendie</span>
             <div class="underline-title"></div>
@@ -140,7 +140,7 @@ déterminantes. Notre mission est de sécuriser la zone et de prendre soin des b
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/f.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/f.webp"  class="img fade" alt="Flammes"></div>
       <div class="card-text">
 <p>Un nettoyage professionnel après incendie s&#39;impose dans la majorité des cas. Les premières 48 Heures sont
 déterminantes. Notre mission est de sécuriser la zone et de prendre soin des biens matériaux pouvant être remis en état.</p>
@@ -157,7 +157,7 @@ déterminantes. Notre mission est de sécuriser la zone et de prendre soin des b
 la décoration de votre appartement ou maison. L'objectif est d&#39;adapter celle-ci à votre goût si vous occupez le logement ou au goût du plus
 grand nombre dans le cadre d'une vente ou d'une location.</p>
            </div>
-                   <div class="img-container"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
+                   <div class="img-container"> <img src="../assets/scaf.webp"  class="img fade" alt="Immeuble en rénovation"></div>
 
       </div>
        <div class="card-mobile">
@@ -166,7 +166,7 @@ grand nombre dans le cadre d'une vente ou d'une location.</p>
             <div class="underline-title"></div>
 
            </div>
-          <div class="img-container-mobile"> <img src="../assets/scaf.webp"  class="img fade" alt=""></div>
+          <div class="img-container-mobile"> <img src="../assets/scaf.webp"  class="img fade" alt="Immeuble en rénovation"></div>
       <div class="card-text">
             <p>Il s'agit de travaux qui touchent principalement à
 la décoration de votre appartement ou maison. L'objectif est d&#39;adapter celle-ci à votre goût si vous occupez le logement ou au goût du plus
@@ -248,7 +248,7 @@ word-break: break-word;
                           text-transform: uppercase;
 
             }
-.y{
+.yellow-highliner{
                 color:rgb(255, 208, 0);
 
 }
@@ -266,7 +266,7 @@ word-break: break-word;
 }
 
 .img {
-    height: 100%;
+    height: 450px;
     width: 450px;
     object-fit: cover;
     border-radius: 15px;
@@ -385,6 +385,36 @@ align-items: center;
 
 }
 
+@media (max-width:400px) {
+   h1{
+              font-size:35px;
+              color:white;
+              margin: 20px 0;
+                          text-transform: uppercase;
 
+            }
+.yellow-highliner{
+                color:rgb(255, 208, 0);
+
+}
+
+.underline-title {
+     width: 80px;
+    height: 5px;
+    background:  #ffe600;;
+    margin: 5px auto 40px auto;
+}
+
+.card-text span{
+  font-size: 30px;
+}
+.card-text p{
+  text-align: center;
+}
+.img{
+  height: 400px;
+  width: 90%;
+}
+}
 </style>
 

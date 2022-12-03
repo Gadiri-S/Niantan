@@ -7,11 +7,11 @@
         <div class="container-first-row">
 
 <div class="logo">
-    <img src="../assets/logo2.png"  class="logo" alt="">
+    <img src="../assets/logo2.png"  class="logo" alt="logo de l'entreprise Niantan Demolition">
 
 </div>
 <div class="menu-burger" @click="showMenu">
-    <img src="../assets/burgerwhite.webp"  class="menu-burger" alt="">
+    <img src="../assets/burgerwhite.webp"  class="menu-burger" alt="menu burger à dérouler pour afficher le menu">
 </div>
 </div>
 <transition name="nested">

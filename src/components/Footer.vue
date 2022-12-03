@@ -20,6 +20,7 @@
      <li @click="nav(about[0].id)">A propos de Niantan Demolition</li>
      <li  @click="nav(contact[0].id)">Devis</li>
     <li  @click="nav(contact[0].id)">Contact</li>
+    <li><router-link to="/credits"> Credits</router-link></li>
     </ul>
 </div>
   <div class="address">
@@ -90,13 +91,13 @@ const position = document.getElementById(id).offsetTop;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 2%;
     color: white;;
         text-align: left;
         max-width: 2000px;
 margin: auto;
 
-    
+        padding: 2%;
+
 }
 
 .company{
@@ -207,6 +208,7 @@ margin: auto;
     .footer{
             flex-direction: column;
             align-items: center;
+            padding: 5%;
 }
     .company{
         width: 100%;

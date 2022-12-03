@@ -4,7 +4,7 @@
   <div class="container">
 
     <div class="header">
-        <h1><span class="y">C</span>ONTACT ET <span class="y">D</span>EVIS</h1>
+        <h1><span class="yellow-highliner">C</span>ONTACT ET <span class="yellow-highliner">D</span>EVIS</h1>
 
         <h2>Pour toute demande d'information veuillez remplir le formulaire ci-dessous ou contactez nous directement par téléphone</h2>
     </div>
@@ -17,7 +17,7 @@
 
 </div>
 </div>
-<div v-else>
+<div v-else class="test" v-motion-slide-visible-once-left>
   <form ref="form" @submit.prevent="handleSubmit">
         <input type="text" placeholder="Prenom*" v-model="firstname" name='firstname'  @blur="v$.firstname.$touch" required>
           <div v-if="v$.firstname.$error" class="error">Ce champ est obligatoire.</div>
@@ -40,14 +40,13 @@
         <button @click="send">Envoyer</button>
 
     </form>
-</div>
     
     
-    <div class="infos">
+    <div class="infos" v-motion-slide-visible-once-right>
 
           <div class="info">
-<font-awesome-icon color="#FFCC00" icon="fas fa-mobile-alt" />
-  <span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
+<font-awesome-icon icon="fas fa-mobile-alt" color="#FFCC00"  />  
+<span><a href="tel:+33659288570"> +33 6 59 28 85 70</a></span>
   </div>
        <div class="info">
 <font-awesome-icon color="#FFCC00" icon="far fa-clock" />
@@ -68,6 +67,7 @@
   </div>
         
     </div>
+</div>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.382407658975!2d2.411002513585662!3d48.85091788134698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6727e19d6e61b%3A0x5d3218b5f9fdc607!2s45%20Bd%20Davout%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1667895568309!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="niantan-demolition-location"></iframe>  </div>
 </div>
@@ -99,11 +99,10 @@ export default {
     return {
       firstname: { required }, // Matches this.firstName
       lastname: { required }, // Matches this.lastName
-        email: { required }, // Matches this.contact.email
+        email: { required,email }, // Matches this.contact.email
         business: { required }, // Matches this.lastName
       message: { required }, // Matches this.lastName
-      tel: { numeric }, // Matches this.lastName
-            tel: { required }, // Matches this.lastName
+      tel: { numeric,required }, // Matches this.lastName
 
 
   
@@ -190,20 +189,29 @@ color: white;
 
             h2{
                 font-size: 25px;
+                font-weight: 400;
+                padding: 15px 0;
             }
+
+            .test{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 .infos{
 
 display: flex;
 flex-direction: column;
-align-items: center;
+justify-content: center;
+
 
 
 
 .info{
 
     display: flex;
-    font-size:25px;
+    font-size:22px;
 color: white;
     font-weight: 500;
     padding: 25px 0;
@@ -263,11 +271,20 @@ box-shadow: rgba(20, 20, 20, 0.24) 0px 3px 8px;    font-size:20px;
     }
 }
 
-.y{
+.yellow-highliner{
                 color:rgb(255, 208, 0);
                               font-size:45px;
 
                 
+
+}
+
+@media (max-width:1250px) {
+              .test{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 }
 
@@ -291,5 +308,36 @@ box-shadow: rgba(20, 20, 20, 0.24) 0px 3px 8px;    font-size:20px;
   }
               }
 
+
+@media (max-width:400px) {
+  
+  .success{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 90%;
+  border-radius: 15px;
+    background: rgb(43, 43, 43);
+    color: rgb(0, 255, 179);
+    margin: auto;
+
+}
+
+ h1{
+              font-size:35px;
+              color:white;
+            }
+
+            h2{
+                font-size: 20px;
+                font-weight: 400;
+                padding: 15px 0;
+            }
+
+.info{
+  text-align: left;
+}
+
+}
 
 </style>

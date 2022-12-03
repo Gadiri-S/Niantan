@@ -2,7 +2,7 @@
   <div class="hero-container">
 
     <div class="text">
-<h1><span class="y">N</span>OS <span class="y">V</span>ALEURS</h1>
+<h1><span class="yellow-highliner">N</span>OS <span class="yellow-highliner">V</span>ALEURS</h1>
 
 </div>
     <div class="container">
@@ -106,7 +106,7 @@ destroyed() {
 
 
 
-    h1,.y {
+    h1{
               font-size:45px;
             padding: 25px 0;
             text-transform: uppercase;
@@ -114,7 +114,7 @@ destroyed() {
             }
 
             
-    .y {
+    .yellow-highliner{
               font-size:45px;
             margin-bottom: 25px;
             text-transform: uppercase;
@@ -168,7 +168,59 @@ background: #000000;
 
 }
 }
-@media (max-width:600px) {
+@media (max-width:400px) {
+.text {
+    text-align: center;
+    width: 100%;
+
+
+
+
+    h1{
+              font-size:35px;
+            padding: 25px 0;
+            text-transform: uppercase;
+
+            }
+
+            
+    .yellow-highliner{
+              font-size:35px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color:rgb(255, 208, 0);
+
+            }
+
+         
+
+      
+
+    
+}
+
+           .value{
+            span{
+                font-size: 20px;
+                margin: 10px 0;
+                font-weight: 600;
+                            color:rgb(255, 208, 0);
+
+            }
+
+            p{
+                line-height: 30px;
+                padding: 15px;
+                text-align: left;
+            }
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 15px;
+            border-radius: 15px;
+    background: rgb(43, 43, 43);
+           }
+
 
 }
 
